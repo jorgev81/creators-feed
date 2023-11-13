@@ -9,11 +9,11 @@ export interface IUser {
 }
 
 const UserCard = (props: IUser) => {
-    const { name, role, description } = props;
+    const { id, avatar, name, role, description } = props;
 
     return (
-        <div className={styles.UserCard}>
-            <img className={styles.Avatar} src={props.avatar} alt={name} />
+        <div id={`card-${id}`} className={styles.UserCard}>
+            <img className={styles.Avatar} src={avatar} alt={name} />
             <div className={styles.Content}>
                 <h6 className='font-bold'>{name}</h6>
                 <span>{role}</span>
