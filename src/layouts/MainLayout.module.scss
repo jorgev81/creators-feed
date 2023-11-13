@@ -1,5 +1,9 @@
 .MainLayout {
-    @apply flex flex-col;
+    @apply flex flex-col container mx-auto px-4;
+}
+
+.Header {
+    @apply text-3xl font-bold my-4 text-center;
 }
 
 .MainContent {
